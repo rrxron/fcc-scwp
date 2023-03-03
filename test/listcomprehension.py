@@ -10,5 +10,5 @@ with open('tongue-twister.txt') as f:
     # list comprehension
     lst = sorted([(v,k) for k,v in counts.items()], reverse=True)
 
-    for val,key in lst[:10]:
+    for val,key in lst[:10]: # slice up to 10 items
         print(key, val)

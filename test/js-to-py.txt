@@ -1,0 +1,144 @@
+VITE... frontend tooling for react instead of create react app
+builder and bundler for production
+
+
+JS "typeof" ===  PY "type()"
+JS `${}` === PY f"{}"
+JS arr.slice(x,y) === PY arr[x:y]
+
+
+for item in collection:
+  ....
+
+def funcname(args):
+  ....
+
+if <condition>:
+elif <other condition>:
+else:
+    default
+
+
+
+    JS: arrays
+          .push()
+          .split()
+          [zero based]
+
+PY: lists
+      l = list() # create manually
+      l = [] # shortcut
+      l.append(1)
+
+      a = [1,2,3,4] # create + initialize
+      methods:
+        .append()
+        .split()
+        [zero based]
+
+
+    JS: objects (with properties)
+          let obj = { prop: value }
+          obj.newProp = value
+
+          // { prop: value, newProp: value }
+
+PY: dictionary (key/value) pair
+      p = dict() # create manually
+      p = {} # shortcut
+
+      d = { prop: value } # create + initialize
+      d[prop] = newValue
+      d["newProp2"] = value
+
+      # { prop: newValue, newProp2: value }
+
+
+python collections:
+  lists: linear collection of values that stay in order
+  dictionaries: each unique key equates to a value (key/value) pair
+
+
+dictionaries are commonly used in histograms
+  where 'x' axis is the key, 'y' axis is the value
+
+<in> operator to check existence
+
+<value> in <list>
+<value> in <dictionary>
+
+shortcut of <in> operator on dictionary if trying to check:
+  <dictionary>.get(<key>, <value>)
+  if it does not exist, insert the value then return
+  if it exists, return that value
+
+
+        counts = {}
+        print('enter line of text:')
+        for word in input('').split():
+          # initiate the key/value if does not exist
+          # insert new key if it does not exist
+          counts[word] = counts.get(word, 0) + 1
+        print('counts', counts)
+
+
+
+# convert to list:
+newList = list(var)
+# convert to dictionary:
+newDictionary = dict(var)
+newDictionary.keys()   # give list of keys
+newDictionary.values() # give list of values
+newDictionary.items()  # give list of tuples (key/value)
+
+        d = { 'a': 1, 'b': 2, 'c': 3 }
+        for (k,v) in d.items():
+          console.log(k,v) # print key and value
+
+
+
+tuples;
+ x = ('item1', 'item2')
+ x[0] // 'item1'
+ for i in x:
+  print(i)
+
+tuples have list operations
+tuples are immutable, while lists are mutable
+tuples are designed for efficiency
+so if you want to just store and read a list, use a tuple
+anything that modifies a list are not available on tuples
+
+  x = tuple()
+
+  (a,b) = (1,2) # tuple assignment
+
+  a = 2
+  b = 4
+  print(a, b)
+  (b,a) = (a,b) # switch variable values
+  print(a, b)
+
+
+comparison operator work on tuples
+  (1 || 2 || 3) < (4 || 5 || 6)... they use OR
+
+
+
+sorted() = builtin function to sort tuples
+
+  # sort by key
+  d = {'a':10, 'c':22, 'b':1}
+  t = sorted(d.items()) # convert dictionary to tuples
+  for k,v in sorted(d.items()):
+    print(k,v)
+
+
+  # sort by value, example in a histogram
+    c = {'a':10, 'b':1, 'c':22}
+    tmp = list()
+    for k,v in c.items():
+      tmp.append((v,k)) # append tuple in list
+    print(tmp)  # [(10, 'a'), (22, 'c'), (1, 'b')]
+    tmp = sorted(tmp, reverse=True)
+    print(tmp)  # [(22, 'c'), (10, 'a'), (1, 'b')]

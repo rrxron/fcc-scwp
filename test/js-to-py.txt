@@ -37,6 +37,20 @@ PY: lists
         [zero based]
 
 
+
+len() = length of string or list
+range() = return list of numbers
+dir() = show all methods in that data type
+
+list.sort() = sort method for list
+
+max(<list>)
+min(<list>)
+sum(<list>)
+
+str.split() = split pieces, default delimeter is space
+
+
     JS: objects (with properties)
           let obj = { prop: value }
           obj.newProp = value
@@ -142,3 +156,17 @@ sorted() = builtin function to sort tuples
     print(tmp)  # [(10, 'a'), (22, 'c'), (1, 'b')]
     tmp = sorted(tmp, reverse=True)
     print(tmp)  # [(22, 'c'), (10, 'a'), (1, 'b')]
+
+
+
+regular expressions
+
+JS
+  const regex = /(\w+)/ig
+  const str = "peter and a cat"
+  console.log(str.match(regex))
+
+PY
+  import re
+  str = "peter and a cat"
+  print(re.findall(r'(\w+)', str, flags=re.IGNORECASE))

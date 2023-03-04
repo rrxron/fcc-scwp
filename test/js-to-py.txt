@@ -48,6 +48,8 @@ max(<list>)
 min(<list>)
 sum(<list>)
 
+str.find('<term>') = find position of 1st occurance of pattern
+
 str.split() = split pieces, default delimeter is space
 
 
@@ -162,11 +164,27 @@ sorted() = builtin function to sort tuples
 regular expressions
 
 JS
-  const regex = /(\w+)/ig
+  const regex = /(\w+)/
+  console.log(regex.test(str))
+PY
+  import re
+  print(re.search(r'(\w+)',str))
+
+
+JS
+  const regex = /(\w+)/i
   const str = "peter and a cat"
   console.log(str.match(regex))
-
 PY
   import re
   str = "peter and a cat"
   print(re.findall(r'(\w+)', str, flags=re.IGNORECASE))
+
+
+str = "Ff: wow:"
+^F.+:  # greedy, prefer the longest of the string
+  result = ["Ff: wow:"]
+^F.+?: # non greedy, prefer shorter of the string
+  result = ["Ff:"]
++ = one or more, greedy (longest match first)
++? = non greedy (shortest match first) one or more

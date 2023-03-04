@@ -200,3 +200,5 @@ PY
 utf-8 is recommended for encoding data because it has dynamic length (1 - 4 bytes)
 str.encode() = encode string to utf-8 bytes
 str.decode() = decode form utf-8 bytes to string
+
+urllib in python

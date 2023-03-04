@@ -188,3 +188,15 @@ str = "Ff: wow:"
   result = ["Ff:"]
 + = one or more, greedy (longest match first)
 +? = non greedy (shortest match first) one or more
+
+
+JS
+  String.fromCharCode()
+  String.charCodeAt()
+PY
+  chr() = convert number equivalent to ascii
+  ord() = return number equivalent of character
+
+utf-8 is recommended for encoding data because it has dynamic length (1 - 4 bytes)
+str.encode() = encode string to utf-8 bytes
+str.decode() = decode form utf-8 bytes to string

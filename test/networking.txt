@@ -1,0 +1,4 @@
+transport layer (bridge) = socket = tcp
+using socket library in python
+
+telnet = old method of logging in on webservers

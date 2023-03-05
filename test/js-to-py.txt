@@ -202,3 +202,5 @@ str.encode() = encode string to utf-8 bytes
 str.decode() = decode form utf-8 bytes to string
 
 urllib in python
+
+webscraping = retrieve page and extract info

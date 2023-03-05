@@ -2,3 +2,38 @@ transport layer (bridge) = socket = tcp
 using socket library in python
 
 telnet = old method of logging in on webservers
+
+serialization = internal representation to external for transporting the data
+deserialization = external representation to internal for consuming the data
+
+JSON & XML = common format in sending data over the internet
+
+
+XML = eXtensible Markup Language
+    = heirarchy structure with elements/nodes and parent/child relationships
+    = ideal for hierarchical documents
+XML Schema
+    = W3C schema specification for XML
+    = contract to validate if the format of XML is valid
+    = uses XSD structure
+
+python has an "xml" library to handle these
+
+
+JSON = JavaScript Object Notation
+     = ideal for transferring data
+     = key/value pairs
+     = in python these are dictionaries, the key and value is in string form
+
+python has a "json" library to handle these
+
+
+SOA = service oriented approach
+    = allow application to be broken into parts and distributed accross network
+    = example: webservice API hosted in the cloud that can be consumed
+
+API = application program interface
+    = used by web apps to give data to consumers of that service
+    = can be secured by requiring consumers to use API keys via OAuth
+    = rate limiting is used so that the service is not abused by allowing
+      limited requests per day, sometimes it can be included in the response header

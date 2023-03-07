@@ -1,0 +1,7 @@
+SQL
+  = structured query language
+  = universal relational database query language
+
+Database Model
+  = database schema
+  = structure or format of a database

@@ -1,7 +1,7 @@
 VITE... frontend tooling for react instead of create react app
 builder and bundler for production
 
-
+JS parseInt() === PY int()
 JS "typeof" ===  PY "type()"
 JS `${}` === PY f"{}"
 JS arr.slice(x,y) === PY arr[x:y]

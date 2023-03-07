@@ -1,0 +1,21 @@
+class
+  = abstract concept
+  = blueprint of object
+  = self contained code + data
+  = break problem into understandable parts
+  = inheritance, encapsulation, polymorphism
+  = method/function
+  = fields/attributes/properties
+
+object
+  = instantiation of a class
+
+
+Object Life Cycle
+  = act of creating and destroying objects
+  = constructor __init__(self) and destructor __del__(self)
+
+Inheritance
+  = code reuse
+  = ability to create new class by extending an existing class
+  = parent class is used by another class which makes it a child class

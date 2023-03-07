@@ -24,3 +24,9 @@ Database Normalization (3NF)
     because Primary key is by default the Clustering Key as well
     so need to manually specify it
     https://stackoverflow.com/questions/11938044/what-are-the-best-practices-for-using-a-guid-as-a-primary-key-specifically-rega
+
+JOIN operation
+  = select statement across multiple tables
+  = "SELECT tbl1.col, tbl2.col ... FROM tbl1 JOIN tbl2 ON tbl1.tbl2_fk = tbl2.pk"
+  = "ON" indicates how the two tables are to be joined
+  = can do "FROM tbl1 JOIN tbl2 JOIN tbl3 ON tbl1.col = tbl2.col and tbl2.col = tbl3.col"

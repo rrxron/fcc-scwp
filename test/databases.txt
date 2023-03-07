@@ -1,7 +1,26 @@
 SQL
   = structured query language
   = universal relational database query language
+  = always use "parameterized sql queries" to avoid SQL injection attacks
 
 Database Model
   = database schema
   = structure or format of a database
+
+Data Model
+  = representation of objects and relationships in data
+  = don't put the same string data in twice, use relationship
+  = each data object that needs to be stored on db should exist
+
+Database Normalization (3NF)
+  = 3NF; third normal form
+    reduce data duplication
+    avoid data anomaly
+    ensure referential integrity
+    entity integrity = every row is uniquely identifiable
+    simplify data management
+  = use GUID as Primary Keys but NOT as a Clustering Key because they are not 100% sequential
+    therefore there needs to be a dedicated column for the Clustering Key
+    because Primary key is by default the Clustering Key as well
+    so need to manually specify it
+    https://stackoverflow.com/questions/11938044/what-are-the-best-practices-for-using-a-guid-as-a-primary-key-specifically-rega

@@ -30,3 +30,20 @@ JOIN operation
   = "SELECT tbl1.col, tbl2.col ... FROM tbl1 JOIN tbl2 ON tbl1.tbl2_fk = tbl2.pk"
   = "ON" indicates how the two tables are to be joined
   = can do "FROM tbl1 JOIN tbl2 JOIN tbl3 ON tbl1.col = tbl2.col and tbl2.col = tbl3.col"
+
+Relationships:
+
+  One to Many
+    = one record (PK) links to many foreign records (FK)
+  Many to Many
+    = need to use a junction table
+
+    example:
+      Course       Member             User
+        (pk) id     (fk) user_id        (pk) id
+        title       (fk) course_id      name
+                    (pk) fk1+fk2        email
+
+    a member can have many courses linked to it
+    a member can have many users linked to it
+    member has primary key as combination of two foreign keys

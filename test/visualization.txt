@@ -1,0 +1,17 @@
+multi step data analysis / data mining:
+  1. gather -> raw db from data sources
+  2. clean -> processed data from raw db
+  3. analyze
+  4. visualize
+
+
+gather:
+  Web Crawler or API or both
+  Web Crawling Policies:
+    - selection: which pages to download
+    - revisit: when to check for changes to the pages
+    - politeness: how to avoid overloading the server
+    - parallelization: coordinating distributed crawlers
+
+  robots.txt
+    - rules for web crawlers

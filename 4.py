@@ -20,8 +20,10 @@ class Rectangle:
         return (self.width ** 2 + self.height ** 2) ** .5
 
     def get_picture(self):
+        # check if we are passing valid values here
         if self.width > 50 or self.height > 50: return "Too big for picture."
         strReturn = ""
+        # assemble the picture
         for _ in range(self.height):
             for _ in range(self.width):
                 strReturn += "*"
@@ -30,6 +32,7 @@ class Rectangle:
 
     def get_amount_inside(self, shape):
         times = 0
+        # use try-except to anticipate divide by zero
         try:
             times = \
                 int(self.width / shape.width) * int(self.height / shape.height)
@@ -41,24 +44,29 @@ class Rectangle:
         return f"Rectangle(width={self.width}, height={self.height})"
 
 
+# inherit Rectangle class
 class Square(Rectangle):
 
     def __init__(self, side):
+        # instantiate parent
         super().__init__(width=side, height=side)
         super().set_height(side)
         super().set_width(side)
         self.side = side
 
     def set_side(self, side):
+        # update inherited values and side property
         super().set_height(side)
         super().set_width(side)
         self.side = side
 
     def set_width(self, width):
+        # update inherited values and side property
         super().set_width(width)
         self.side = width
 
     def set_height(self, height):
+        # update inherited values and side property
         super().set_height(height)
         self.side = height
 
